@@ -2,8 +2,10 @@
 //  J_I_MTests.swift
 //  J.I.MTests
 //
-//  Created by Brian Nguyen on 10/11/22.
-//
+//  Brian Nguyen
+//  Jaden Faustino
+//  Julian Manaois
+//  SFSU ENGR 696 Fall 2022
 
 import XCTest
 @testable import J_I_M

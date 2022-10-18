@@ -2,18 +2,22 @@
 //  ContentView.swift
 //  J.I.M
 //
-//  Created by Brian Nguyen on 10/11/22.
-//
+//  Brian Nguyen
+//  Jaden Faustino
+//  Julian Manaois
+//  SFSU ENGR 696 Fall 2022
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "star")
+                .padding(0.0)
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Welcome to PROJECT JIM")
+                .font(.title)
         }
         .padding()
     }

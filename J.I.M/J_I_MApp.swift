@@ -1,9 +1,11 @@
 //
 //  J_I_MApp.swift
-//  J.I.M
+//  ProjectJIM
 //
-//  Created by Brian Nguyen on 10/11/22.
-//
+//  Brian Nguyen
+//  Jaden Faustino
+//  Julian Manaois
+//  SFSU ENGR 696 Fall 2022
 
 import SwiftUI
 
