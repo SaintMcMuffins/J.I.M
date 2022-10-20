@@ -14,6 +14,7 @@ struct J_I_MApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            login()
         }
     }
 }
