@@ -47,9 +47,9 @@ class PhoneView: UIViewController {
 		}
 
 		labelTitle.text = "Start with\nphone number"
-		labelSubTitle.text = "Please enter your mobile number to get sms for activate your account."
-		textFieldCountry.text = "+816"
-		textFieldPhoneNumber.text = "770 90 87"
+		labelSubTitle.text = "Enter your mobile number. A text message will be sent to verify your account."
+		textFieldCountry.text = "+1"
+		textFieldPhoneNumber.text = "123 456 7890"
 	}
 
 	// MARK: - User actions
