@@ -33,8 +33,8 @@ class Login1View: UIViewController {
 	//-------------------------------------------------------------------------------------------------------------------------------------------
 	func loadData() {
 
-		labelTitle.text = "Welcome to\nAppDesignKit"
-		labelSubTitle.text = "An exciting place for the whole family to shop."
+		labelTitle.text = "Welcome to \nProjectJIM!"
+		labelSubTitle.text = "Your favorite rep counter and exercise buddy"
 	}
 
 	// MARK: - User actions
