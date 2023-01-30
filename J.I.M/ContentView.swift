@@ -15,9 +15,12 @@ struct ContentView: View {
             Image(systemName: "star")
                 .padding(0.0)
                 .imageScale(.large)
-                .foregroundColor(.accentColor)
+                .foregroundColor(.green)
             Text("Welcome to PROJECT JIM")
                 .font(.title)
+                .fontWeight(.heavy)
+                .foregroundColor(Color(red: 0.343, green: 0.30, blue: 4.0, opacity: 2.0))
+                
         }
         .padding()
     }

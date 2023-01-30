@@ -14,6 +14,15 @@
 		449318F228F66544009C36DA /* J_I_MTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449318F128F66544009C36DA /* J_I_MTests.swift */; };
 		449318FC28F66544009C36DA /* J_I_MUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449318FB28F66544009C36DA /* J_I_MUITests.swift */; };
 		449318FE28F66544009C36DA /* J_I_MUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449318FD28F66544009C36DA /* J_I_MUITestsLaunchTests.swift */; };
+		80642965293FBBD800C581BD /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80642964293FBBD800C581BD /* AppColor.swift */; };
+		80642967293FBBE800C581BD /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80642966293FBBE800C581BD /* NavController.swift */; };
+		80642969293FBBFA00C581BD /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80642968293FBBFA00C581BD /* UIImageView+Extension.swift */; };
+		8064296B293FBC1300C581BD /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064296A293FBC1300C581BD /* UITextField+Extension.swift */; };
+		8064296D293FBC2600C581BD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064296C293FBC2600C581BD /* UIView+Extension.swift */; };
+		809866082909A61700BEF819 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809866072909A61700BEF819 /* LaunchViewController.swift */; };
+		80DDB1C528FF490800856233 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DDB1C428FF490800856233 /* login.swift */; };
+		80DDB1C928FF4F3300856233 /* mainBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DDB1C828FF4F3300856233 /* mainBoard.storyboard */; };
+		80DDB1CB28FF9D1800856233 /* register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DDB1CA28FF9D1800856233 /* register.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,15 @@
 		449318F728F66544009C36DA /* J.I.MUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = J.I.MUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		449318FB28F66544009C36DA /* J_I_MUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_I_MUITests.swift; sourceTree = "<group>"; };
 		449318FD28F66544009C36DA /* J_I_MUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_I_MUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		80642964293FBBD800C581BD /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		80642966293FBBE800C581BD /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
+		80642968293FBBFA00C581BD /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		8064296A293FBC1300C581BD /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		8064296C293FBC2600C581BD /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		809866072909A61700BEF819 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		80DDB1C428FF490800856233 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
+		80DDB1C828FF4F3300856233 /* mainBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mainBoard.storyboard; sourceTree = "<group>"; };
+		80DDB1CA28FF9D1800856233 /* register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = register.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +112,13 @@
 		449318DF28F66542009C36DA /* J.I.M */ = {
 			isa = PBXGroup;
 			children = (
+				80642963293FBBCF00C581BD /* Utilities */,
 				449318E028F66542009C36DA /* J_I_MApp.swift */,
 				449318E228F66542009C36DA /* ContentView.swift */,
+				80DDB1C428FF490800856233 /* login.swift */,
+				80DDB1CA28FF9D1800856233 /* register.swift */,
+				80DDB1C828FF4F3300856233 /* mainBoard.storyboard */,
+				809866092909A76B00BEF819 /* View Controllers */,
 				449318E428F66543009C36DA /* Assets.xcassets */,
 				449318E628F66543009C36DA /* Preview Content */,
 			);
@@ -125,6 +148,26 @@
 				449318FD28F66544009C36DA /* J_I_MUITestsLaunchTests.swift */,
 			);
 			path = J.I.MUITests;
+			sourceTree = "<group>";
+		};
+		80642963293FBBCF00C581BD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				80642964293FBBD800C581BD /* AppColor.swift */,
+				80642966293FBBE800C581BD /* NavController.swift */,
+				80642968293FBBFA00C581BD /* UIImageView+Extension.swift */,
+				8064296A293FBC1300C581BD /* UITextField+Extension.swift */,
+				8064296C293FBC2600C581BD /* UIView+Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		809866092909A76B00BEF819 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				809866072909A61700BEF819 /* LaunchViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +276,7 @@
 			files = (
 				449318E828F66543009C36DA /* Preview Assets.xcassets in Resources */,
 				449318E528F66543009C36DA /* Assets.xcassets in Resources */,
+				80DDB1C928FF4F3300856233 /* mainBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +301,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8064296B293FBC1300C581BD /* UITextField+Extension.swift in Sources */,
 				449318E328F66542009C36DA /* ContentView.swift in Sources */,
+				80642967293FBBE800C581BD /* NavController.swift in Sources */,
+				80642969293FBBFA00C581BD /* UIImageView+Extension.swift in Sources */,
+				809866082909A61700BEF819 /* LaunchViewController.swift in Sources */,
+				80DDB1C528FF490800856233 /* login.swift in Sources */,
+				80DDB1CB28FF9D1800856233 /* register.swift in Sources */,
 				449318E128F66542009C36DA /* J_I_MApp.swift in Sources */,
+				8064296D293FBC2600C581BD /* UIView+Extension.swift in Sources */,
+				80642965293FBBD800C581BD /* AppColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,8 +476,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,8 +505,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
