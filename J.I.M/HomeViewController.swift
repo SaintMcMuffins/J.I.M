@@ -26,7 +26,10 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction func myProfileButtonTapped(_ sender: Any) {
-        // do something when the my profile button is tapped
+        // navigate to my profile page
+         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let myProfileVC = storyboard.instantiateViewController(withIdentifier: "MyProfileViewController") as! MyProfileViewController
+        self.navigationController?.pushViewController(myProfileVC, animated: true)
     }
 
     @IBAction func calendarButtonTapped(_ sender: Any) {
