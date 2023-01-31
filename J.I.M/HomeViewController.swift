@@ -4,18 +4,37 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    var welcomeLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 20)
+        label.textAlignment = .center
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        view.addSubview(welcomeLabel)
+        NSLayoutConstraint.activate([
+            welcomeLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+            welcomeLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            welcomeLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+        ])
+
         // check if there is a logged in user
-        guard let _ = User.getLoggedInUser() else {
+        guard let loggedInUser = User.getLoggedInUser() else {
             // if there isn't a logged in user, navigate to the login page
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
             self.navigationController?.pushViewController(loginVC, animated: true)
             return
         }
+
+        welcomeLabel.text = "Welcome Back, \(loggedInUser.username)"
     }
+
+
 
     @IBAction func homeButtonTapped(_ sender: Any) {
         // do something when the home button is tapped
