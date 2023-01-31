@@ -23,6 +23,9 @@ class HomeViewController: UIViewController {
 
     @IBAction func workoutButtonTapped(_ sender: Any) {
         // do something when the workout button is tapped
+         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let workoutVC = storyboard.instantiateViewController(withIdentifier: "WorkoutViewController") as! WorkoutViewController
+        self.navigationController?.pushViewController(workoutVC, animated: true)
     }
 
     @IBAction func myProfileButtonTapped(_ sender: Any) {

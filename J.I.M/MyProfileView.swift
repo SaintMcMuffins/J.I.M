@@ -50,6 +50,9 @@ func addBottomButtonBar() {
 
 @objc func goToWorkout() {
     //Navigate to the workout view controller
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let workoutVC = storyboard.instantiateViewController(withIdentifier: "WorkoutViewController") as! WorkoutViewController
+        self.navigationController?.pushViewController(workoutVC, animated: true)
 }
 
 @objc func goToCalendar() {
@@ -64,8 +67,20 @@ func addBottomButtonBar() {
 }
 
 func loadUserData() {
-    //Retrieve the logged in user's data from Core Data and update the UI elements
+    //Retrieve the logged in user's data from Core Data and update the UI elements{
+    guard let loggedInUser = getLoggedInUser() else { return }
+    
+    nameLabel.text = loggedInUser.name
+    experienceLevelLabel.text = loggedInUser.experienceLevel
+    weightLabel.text = "\(loggedInUser.weight) lbs"
+    currentPRLabel.text = "\(loggedInUser.currentPR) lbs"
+    
+    if let imageData = loggedInUser.profilePicture {
+        profilePictureImageView.image = UIImage(data: imageData)
+    }
 }
+
+
 
 //Add IBAction for Edit button to present the EditProfileViewController
 
