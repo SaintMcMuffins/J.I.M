@@ -81,7 +81,10 @@ func loadUserData() {
 }
 
 
-
-//Add IBAction for Edit button to present the EditProfileViewController
+//IBAction for Edit button to present the EditProfileViewController
+@IBAction func editButtonTapped(_ sender: UIBarButtonItem) {
+    let editProfileViewController = EditProfileViewController()
+    navigationController?.pushViewController(editProfileViewController, animated: true)
+}
 
 }
