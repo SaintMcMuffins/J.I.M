@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 import CoreData
-import User
 
 class CalendarViewController: UIViewController {
     private let calendar = Calendar.current
@@ -88,13 +87,13 @@ extension CalendarViewController: UICollectionViewDataSource {
     }
 }
 
-extension CalendarViewController: UICollection {
+extension CalendarViewController: UICollectionViewDelegate {
     
     private func getLoggedInUser() -> User? {
-        let request = User.fetchRequest() as NSFetchRequest<User>
-        request.predicate = NSPredicate(format: "isLoggedIn == true")
+        let fetchRequest: NSFetchRequest<User> = NSFetchRequest(entityName: "User")
+        fetchRequest.predicate = NSPredicate(format: "isLoggedIn == true")
         do {
-            let users = try PersistenceService.context.fetch(request)
+            let users = try PersistenceService.context.fetch(fetchRequest)
             if let user = users.first {
                 return user
             }
@@ -103,5 +102,7 @@ extension CalendarViewController: UICollection {
         }
         return nil
     }
+
+
 }
 

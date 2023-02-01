@@ -19,7 +19,7 @@ class RegisterViewController: UIViewController {
             return
         }
 
-        let user = User(context: PersistenceService.context)
+        let user = User(coder: PersistenceService.context)
         user.name = name
         user.email = email
         user.password = password

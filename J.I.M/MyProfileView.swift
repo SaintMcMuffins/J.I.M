@@ -1,12 +1,17 @@
 // Screen for user's profile page.
 
 
+import Foundation
+import UIKit
+
 class MyProfileViewController: UIViewController {
 
 @IBOutlet weak var profileImageView: UIImageView!
 @IBOutlet weak var nameLabel: UILabel!
 @IBOutlet weak var experienceLevelLabel: UILabel!
 @IBOutlet weak var weightLabel: UILabel!
+@IBOutlet weak var currentPRLabel: UILabel!
+
 
 override func viewDidLoad() {
     super.viewDidLoad()
@@ -76,7 +81,7 @@ func loadUserData() {
     currentPRLabel.text = "\(loggedInUser.currentPR) lbs"
     
     if let imageData = loggedInUser.profilePicture {
-        profilePictureImageView.image = UIImage(data: imageData)
+        profileImageView.image = UIImage(data: imageData)
     }
 }
 

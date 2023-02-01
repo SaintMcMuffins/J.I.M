@@ -22,6 +22,8 @@
 		8042A9952989A0FE00DD1D8F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042A9942989A0FE00DD1D8F /* LoginViewController.swift */; };
 		8042A9972989A10400DD1D8F /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042A9962989A10400DD1D8F /* MyProfileView.swift */; };
 		8042A9992989A10B00DD1D8F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042A9982989A10B00DD1D8F /* RegisterViewController.swift */; };
+		8055CA3E2989E765004B3A22 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8055CA3D2989E765004B3A22 /* CalendarCell.swift */; };
+		8055CA402989E795004B3A22 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8055CA3F2989E795004B3A22 /* PersistenceService.swift */; };
 		809866082909A61700BEF819 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809866072909A61700BEF819 /* LaunchViewController.swift */; };
 		80DDB1C928FF4F3300856233 /* mainBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DDB1C828FF4F3300856233 /* mainBoard.storyboard */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,8 @@
 		8042A9942989A0FE00DD1D8F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8042A9962989A10400DD1D8F /* MyProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
 		8042A9982989A10B00DD1D8F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8055CA3D2989E765004B3A22 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		8055CA3F2989E795004B3A22 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		809866072909A61700BEF819 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		80DDB1C828FF4F3300856233 /* mainBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mainBoard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +126,8 @@
 				8042A98E2989A0EC00DD1D8F /* ExperienceLevelPickerView.swift */,
 				8042A9902989A0EC00DD1D8F /* HomeViewController.swift */,
 				8018D7B32989DC290002B658 /* CalendarViewController.swift */,
+				8055CA3F2989E795004B3A22 /* PersistenceService.swift */,
+				8055CA3D2989E765004B3A22 /* CalendarCell.swift */,
 				449318E028F66542009C36DA /* J_I_MApp.swift */,
 				449318E228F66542009C36DA /* ContentView.swift */,
 				80DDB1C828FF4F3300856233 /* mainBoard.storyboard */,
@@ -301,8 +307,10 @@
 				8042A9972989A10400DD1D8F /* MyProfileView.swift in Sources */,
 				8042A9952989A0FE00DD1D8F /* LoginViewController.swift in Sources */,
 				449318E328F66542009C36DA /* ContentView.swift in Sources */,
+				8055CA402989E795004B3A22 /* PersistenceService.swift in Sources */,
 				809866082909A61700BEF819 /* LaunchViewController.swift in Sources */,
 				449318E128F66542009C36DA /* J_I_MApp.swift in Sources */,
+				8055CA3E2989E765004B3A22 /* CalendarCell.swift in Sources */,
 				8042A9922989A0EC00DD1D8F /* EditProfileViewController.swift in Sources */,
 				8042A9912989A0EC00DD1D8F /* ExperienceLevelPickerView.swift in Sources */,
 				8042A9932989A0EC00DD1D8F /* HomeViewController.swift in Sources */,
