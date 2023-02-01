@@ -14,6 +14,8 @@
 		449318F228F66544009C36DA /* J_I_MTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449318F128F66544009C36DA /* J_I_MTests.swift */; };
 		449318FC28F66544009C36DA /* J_I_MUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449318FB28F66544009C36DA /* J_I_MUITests.swift */; };
 		449318FE28F66544009C36DA /* J_I_MUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449318FD28F66544009C36DA /* J_I_MUITestsLaunchTests.swift */; };
+		8018D7B42989DC290002B658 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8018D7B32989DC290002B658 /* CalendarViewController.swift */; };
+		8018D7B62989DE0C0002B658 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8018D7B52989DE0C0002B658 /* User.swift */; };
 		8042A9912989A0EC00DD1D8F /* ExperienceLevelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042A98E2989A0EC00DD1D8F /* ExperienceLevelPickerView.swift */; };
 		8042A9922989A0EC00DD1D8F /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042A98F2989A0EC00DD1D8F /* EditProfileViewController.swift */; };
 		8042A9932989A0EC00DD1D8F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042A9902989A0EC00DD1D8F /* HomeViewController.swift */; };
@@ -52,6 +54,8 @@
 		449318F728F66544009C36DA /* J.I.MUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = J.I.MUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		449318FB28F66544009C36DA /* J_I_MUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_I_MUITests.swift; sourceTree = "<group>"; };
 		449318FD28F66544009C36DA /* J_I_MUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_I_MUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8018D7B32989DC290002B658 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		8018D7B52989DE0C0002B658 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8042A98E2989A0EC00DD1D8F /* ExperienceLevelPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceLevelPickerView.swift; sourceTree = "<group>"; };
 		8042A98F2989A0EC00DD1D8F /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		8042A9902989A0EC00DD1D8F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -110,12 +114,14 @@
 		449318DF28F66542009C36DA /* J.I.M */ = {
 			isa = PBXGroup;
 			children = (
+				8018D7B52989DE0C0002B658 /* User.swift */,
 				8042A9942989A0FE00DD1D8F /* LoginViewController.swift */,
 				8042A98F2989A0EC00DD1D8F /* EditProfileViewController.swift */,
 				8042A9982989A10B00DD1D8F /* RegisterViewController.swift */,
 				8042A9962989A10400DD1D8F /* MyProfileView.swift */,
 				8042A98E2989A0EC00DD1D8F /* ExperienceLevelPickerView.swift */,
 				8042A9902989A0EC00DD1D8F /* HomeViewController.swift */,
+				8018D7B32989DC290002B658 /* CalendarViewController.swift */,
 				449318E028F66542009C36DA /* J_I_MApp.swift */,
 				449318E228F66542009C36DA /* ContentView.swift */,
 				80DDB1C828FF4F3300856233 /* mainBoard.storyboard */,
@@ -290,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8018D7B42989DC290002B658 /* CalendarViewController.swift in Sources */,
 				8042A9992989A10B00DD1D8F /* RegisterViewController.swift in Sources */,
 				8042A9972989A10400DD1D8F /* MyProfileView.swift in Sources */,
 				8042A9952989A0FE00DD1D8F /* LoginViewController.swift in Sources */,
@@ -299,6 +306,7 @@
 				8042A9922989A0EC00DD1D8F /* EditProfileViewController.swift in Sources */,
 				8042A9912989A0EC00DD1D8F /* ExperienceLevelPickerView.swift in Sources */,
 				8042A9932989A0EC00DD1D8F /* HomeViewController.swift in Sources */,
+				8018D7B62989DE0C0002B658 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
